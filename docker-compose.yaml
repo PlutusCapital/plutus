@@ -1,0 +1,18 @@
+version: "3.5"
+
+volumes:
+  plutus-data:
+
+services:
+  node:
+    build: .
+    command: [/app/entrypoint.sh]
+    environment:
+      REMOTES: '47.89.27.192:51472'
+    ports:
+      - "0.0.0.0:51473:51473"
+      - "0.0.0.0:51472:51472"
+    volumes:
+      - ./entrypoint.sh:/app/entrypoint.sh
+      - ./plutus-data:/app/.plutus
+    restart: always
