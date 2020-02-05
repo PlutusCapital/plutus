@@ -2,13 +2,19 @@ version: "3.5"
 
 volumes:
   plutus-data:
+  plutus1-data:
+  plutus2-data:
+  plutus3-data:
+  plutus4-data:
+  explorer-data:
+  mn1:
 
 services:
-  node:
+  n0:
     build: .
     command: [/app/entrypoint.sh]
     environment:
-      REMOTES: '47.89.27.192:51472'
+      REMOTES: '47.56.204.89:51472'
     ports:
       - "0.0.0.0:51473:51473"
       - "0.0.0.0:51472:51472"
