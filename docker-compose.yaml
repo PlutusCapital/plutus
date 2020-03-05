@@ -14,7 +14,7 @@ services:
     build: .
     command: [/app/entrypoint.sh]
     environment:
-      REMOTES: '47.56.204.89:51472'
+      REMOTES: '47.56.69.103:51472'
     ports:
       - "0.0.0.0:51473:51473"
       - "0.0.0.0:51472:51472"
