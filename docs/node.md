@@ -1,4 +1,4 @@
-Steps for connecting to PLutus mainnet
+Steps for connecting to Plutus mainnet
 ======================================
 
 1. Clone the repository
