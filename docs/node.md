@@ -3,10 +3,11 @@ Steps for connecting to Plutus mainnet
 
 1. Clone the repository
 
-2. unzip src/plutusd.zip
+2. Unzip "plutusd.zip" file in the src directory.
 
 3. Start the node:
 >docker-compose build n0
+
 >docker-compose up -d n0
 
 4. Check the status of running node:
